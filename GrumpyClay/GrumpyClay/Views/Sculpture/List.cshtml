@@ -1,0 +1,7 @@
+﻿@model SculpturesListViewModel
+
+<h1>@Model.CurrentCategory</h1>
+@foreach (var sculpture in Model.Sculptures)
+{
+    <partial name="_SculptureCard" model="sculpture" />
+}
